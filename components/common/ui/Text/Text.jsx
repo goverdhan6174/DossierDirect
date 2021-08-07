@@ -7,6 +7,7 @@ const Text = ({
   children,
   html,
   onClick,
+  Component = "p",
 }) => {
   const componentsMap = {
     body: "div",
