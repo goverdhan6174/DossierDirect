@@ -1,5 +1,6 @@
 .main {
-  @apply relative min-h-screen px-4 md:px-32;
+  @apply relative min-h-screen px-2 container md:mx-auto sm:px-2;
+  max-width: 769px;
 }
 
 .container {
@@ -9,6 +10,10 @@
 
 .formContainer {
   /* @apply fixed max-w-max w-max flex-col; */
-  @apply sticky max-w-full w-full flex flex-row justify-between items-center px-4 md:px-32 py-6 z-20;
+  @apply sticky max-w-full w-full items-center px-4 py-8 z-20;
   background: var(--canvas-color);
+}
+
+.last-border-0 > :last-child {
+  border-width: 0 !important;
 }

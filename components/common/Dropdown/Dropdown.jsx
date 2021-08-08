@@ -14,7 +14,7 @@ const Dropdown = (props) => (
           childClassName={props.childClassName}
           containerClassName={props.containerClassName}
         >
-          {props.children({ toggle , open })}
+          {props.children({ toggle, open })}
         </BaseMenu>
       </>
     )}
@@ -114,8 +114,10 @@ const BaseMenu = (props) => (
           <>
             <div key={item.title} className={props.childClassName}>
               <div>
-                <h3 className="text-gray-400">{item.title}</h3>
-                <p className="text-black text-xl">{item.desc}</p>
+                <h3 className="text-gray-400 text-sm sm:text-md">
+                  {item.title}
+                </h3>
+                <p className="text-black text-sm sm:text-md">{item.desc}</p>
               </div>
               {!!item.icon && item.icon}
             </div>
