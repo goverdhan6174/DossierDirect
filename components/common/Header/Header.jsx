@@ -5,7 +5,7 @@ const Header = ({ props }) => {
   return (
     <>
       <header
-        className={`flex justify-between items-center space-x-4 sm:bg-canvas-color bg-primary h-16 px-4`}
+        className={`flex justify-between items-center space-x-4 sm:bg-canvas-color bg-primary h-16 px-4 sm:px-10`}
         {...props}
       >
         <DossierDirectLogo

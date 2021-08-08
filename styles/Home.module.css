@@ -17,3 +17,13 @@
 .last-border-0 > :last-child {
   border-width: 0 !important;
 }
+
+.formStateTitle {
+  font-size: 0.6rem;
+}
+
+@media (min-width: 640px) {
+  .formStateTitle {
+    font-size: 1rem;
+  }
+}

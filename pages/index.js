@@ -173,7 +173,7 @@ export default function Home() {
                     formStates[currentState].state === formState.state
                       ? "bg-accent text-primary-light"
                       : formState.completed
-                      ? "bg-primary text-primary-light"
+                      ? "bg-accent text-primary-light"
                       : "bg-white text-primary"
                   }`}
                 >
@@ -186,13 +186,13 @@ export default function Home() {
                   )}
                 </div>
                 <p
-                  className={`font-medium text-xs sm:text-sm lg:text-xl mt-2 ${
+                  className={`font-medium uppercase font-bold mt-2 ${
                     formStates[currentState].state === formState.state
                       ? "text-accent"
                       : formState.completed
                       ? "text-primary"
                       : "text-gray-400"
-                  }`}
+                  }  ${styles.formStateTitle}`}
                 >
                   {formState.state}
                 </p>
@@ -201,7 +201,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className="text-center text-primary font-bold text-3xl mb-12">
+        <h1 className="text-center text-primary font-bold text-2xl mb-8">
           Confirmation
         </h1>
         {menus.map((menu) => (
@@ -219,7 +219,7 @@ export default function Home() {
                 className="flex justify-between items-center bg-white w-full h-12 rounded-lg font-medium p-8"
                 onClick={toggle}
               >
-                <p className="text-primary text-left text-lg sm:text-xl lg:text-2xl">
+                <p className="text-primary text-left font-medium text-lg sm:text-xl">
                   {menu.title}
                 </p>
                 <div className="flex justify-between items-center space-x-2">
@@ -251,7 +251,7 @@ export default function Home() {
               className="flex justify-between items-center bg-white w-full h-12 rounded-lg font-medium p-8"
               onClick={toggle}
             >
-              <p className="text-primary text-left text-lg sm:text-xl lg:text-2xl">
+              <p className="text-primary text-left font-medium text-lg sm:text-xl">
                 {uploadMenu.title}
               </p>
               <div className="flex justify-between items-center space-x-2">
@@ -281,12 +281,12 @@ export default function Home() {
               </p>
             </div>
           ))}
-          <Button type="outline" className="mt-2 mb-4">
+          <Button type="outline" className="my-2">
             View Details
           </Button>
         </div>
 
-        <div className="flex flex-col sm:max-w-max sm:mx-auto">
+        <div className="flex flex-col sm:max-w-max sm:mx-auto mt-2 sm:mt-6 pb-16">
           <div className="flex justify-between items-center my-1">
             <Button type="outline" className="w-full m-1 sm:m-2">
               Back
