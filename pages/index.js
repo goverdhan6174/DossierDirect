@@ -151,8 +151,8 @@ export default function Home() {
       <Header />
 
       <div className={styles.formContainer}>
-        <div className="absolute w-full h-2 bg-transparent z-0 -ml-32  -mt-6">
-          <div className="w-full absolute h-2 bg-transparent z-0 px-40">
+        <div className="absolute w-full h-2 bg-transparent z-0 -ml-4 md:-ml-32 -mt-7 md:-mt-6">
+          <div className="w-full absolute h-2 bg-transparent px-12 sm:px-16 md:px-40 lg:px-44">
             <div className="w-full h-2 bg-white">
               <div
                 className="bg-accent w-full h-2"
@@ -167,7 +167,7 @@ export default function Home() {
             key={formState.state}
           >
             <div
-              className={`flex justify-center items-center rounded-full h-12 w-12 ${
+              className={`flex justify-center items-center rounded-full h-8 w-8 md:h-12 md:w-12 ${
                 formStates[currentState].state === formState.state
                   ? "bg-accent text-primary-light"
                   : formState.completed
@@ -178,7 +178,7 @@ export default function Home() {
               <Check scale={0.8} />
             </div>
             <p
-              className={`font-medium text-lg mt-2 ${
+              className={`font-medium text-xs sm:text-sm lg:text-xl mt-2 ${
                 formStates[currentState].state === formState.state
                   ? "text-accent"
                   : formState.completed

@@ -1,5 +1,5 @@
 .main {
-  @apply relative min-h-screen px-32;
+  @apply relative min-h-screen px-4 md:px-32;
 }
 
 .container {
@@ -8,6 +8,7 @@
 }
 
 .formContainer {
-  @apply fixed md:sticky max-w-max md:max-w-full md:w-full flex flex-col md:flex-row justify-between items-center md:px-32 py-6 z-20;
+  /* @apply fixed max-w-max w-max flex-col; */
+  @apply sticky max-w-full w-full flex flex-row justify-between items-center px-4 md:px-32 py-6 z-20;
   background: var(--canvas-color);
 }
